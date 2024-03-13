@@ -8,8 +8,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class MainAppTests {
 
     @Test
-    void testDevelopedFeaure(){
-        Assertions.assertEquals(10,MainApp.getSum(4,6));
-        Assertions.assertNotEquals(9,MainApp.getSum(4,3));
+    void testDevelopedFeature(){
+        MainApp mainApp = new MainApp();
+        Assertions.assertEquals(10,mainApp.getSum(4,6));
+        Assertions.assertNotEquals(9,mainApp.getSum(4,3));
     }
 }

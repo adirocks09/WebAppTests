@@ -1,16 +1,16 @@
 package com.aditya.web;
 
+import java.util.*;
+
 public class MainApp {
 
     public static void main(String args[]) {
-
-        System.out.println("Sum = " + getSum(5, 2));
-
+        MainApp mainApp = new MainApp();
+        int sum = mainApp.getSum(5, 2);
+        System.out.println("Sum = " + sum);
     }
 
-    public static int getSum(int a, int b) {
-
+    public int getSum(int a, int b) {
         return a + b;
-
     }
 }
